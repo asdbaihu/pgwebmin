@@ -1,0 +1,31 @@
+{
+  "name": "pgwebmin-web",
+  "version": "1.1.1",
+  "description": "A web based PostgreSQL admin interface",
+  "main": "server.js",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/bsneade/pgwebmin.git"
+  },
+  "keywords": [
+    "react",
+    "flux",
+    "webpack",
+    "gulp",
+    "PostgreSQL"
+  ],
+  "author": "Brad Sneade",
+  "license": "PostgreSQL",
+  "bugs": {
+    "url": "https://github.com/bsneade/pgwebmin/issues"
+  },
+  "homepage": "https://github.com/bsneade/pgwebmin",
+  "devDependencies": {
+    "gulp": "^3.8.11",
+    "watch": "^0.14.0"
+  },
+  "dependencies": {
+    "webpack": "^1.7.3",
+    "fluxxor": "^1.7.3"
+  }
+}
