@@ -1,0 +1,18 @@
+{
+  "name": "pgwebmin-electron",
+  "version": "0.1.0",
+  "description": "Desktop packaging for PGWebmin",
+  "main": "main.js",
+  "scripts": {
+    "start": "electron main.js"
+  },
+  "keywords": [
+    "Electron",
+    "Postgressql"
+  ],
+  "author": "Brad Sneade",
+  "license": "PostgreSQL",
+  "devDependencies": {
+    "electron-prebuilt": "^1.0.1"
+  }
+}
