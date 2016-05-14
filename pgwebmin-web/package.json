@@ -2,16 +2,22 @@
   "name": "pgwebmin-web",
   "version": "1.1.1",
   "description": "A web based PostgreSQL admin interface",
-  "main": "server.js",
+  "main": "''",
+  "scripts": {
+    "build": "webpack --progress --profile --colors ",
+    "dev": "webpack-dev-server --content-base dist/ --progress --profile --colors --inline --hot --port 8081"
+  },
   "repository": {
     "type": "git",
     "url": "https://github.com/bsneade/pgwebmin.git"
   },
   "keywords": [
-    "react",
-    "flux",
-    "webpack",
-    "gulp",
+    "React",
+    "Webpack",
+    "Babel",
+    "Fluxxor",
+    "Webpack",
+    "Gulp",
     "PostgreSQL"
   ],
   "author": "Brad Sneade",
@@ -22,10 +28,30 @@
   "homepage": "https://github.com/bsneade/pgwebmin",
   "devDependencies": {
     "gulp": "^3.8.11",
-    "watch": "^0.14.0"
+    "watch": "^0.14.0",
+    "babel-core": "^6.4.5",
+    "json-loader": "^0.5.3",
+    "babel-loader": "^6.2.1",
+    "babel-preset-es2015": "^6.3.13",
+    "babel-preset-react": "^6.3.13",
+    "css-loader": "^0.18.0",
+    "extract-text-webpack-plugin": "^1.0.1",
+    "file-loader": "^0.8.5",
+    "less": "^2.5.3",
+    "less-loader": "^2.2.2",
+    "react-hot-loader": "^1.3.0",
+    "style-loader": "^0.13.0",
+    "url-loader": "^0.5.7",
+    "webpack": "^1.12.12",
+    "webpack-dev-server": "^1.14.1"
   },
   "dependencies": {
     "webpack": "^1.7.3",
-    "fluxxor": "^1.7.3"
+    "fluxxor": "^1.7.3",
+    "babel-core": "^6.4.5",
+    "bootstrap": "^3.3.6",
+    "fluxxor": "^1.7.3",
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6"
   }
 }

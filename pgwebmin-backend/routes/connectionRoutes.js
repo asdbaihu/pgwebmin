@@ -17,20 +17,28 @@ function ConnectionRoutes(server) {
     });
 	client.connect(function(err) {
 	  	if(err) {
-	    	return logger.error('could not connect to postgres', err);
+	    	logger.error('could not connect to postgres', err);
+	    	return next(err);
 	  	}
+
+	  	//lets make the call
 	  	logger.debug("Executing " + req.body.sql);
-	  	client.query(req.body.sql, function(err, result) {
+	  	return client.query(req.body.sql, function(err, result) {
 		    if(err) {
-		    	return logger.error('error running query', err);
+		    	logger.error('error running query', err);
+		    	return next(err);
 		    }
-		    logger.info("Returning rows " + result.rows[0]);
-		    //output: Tue Jan 15 2013 19:12:47 GMT-600 (CST)
+		    logger.info("Returning " + result.rows.length + " rows");
+
+		    //end the connection
 		    client.end();
+
+		    //send the result
+		    res.send(200, result);
+			return next();
 		});
 	});
-	res.send(200);
-	return next();
+	
    });
 }
 
