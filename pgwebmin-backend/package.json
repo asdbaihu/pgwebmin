@@ -26,6 +26,7 @@
     "pg": "^4.5.5",
     "restify": "^4.0.4",
     "winston": "^2.2.0",
-    "q": "^1.4.1"
+    "q": "^1.4.1",
+    "pgwebmin-web": "file:../pgwebmin-web"
   }
 }

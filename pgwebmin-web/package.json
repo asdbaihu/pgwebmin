@@ -1,57 +1,51 @@
 {
-  "name": "pgwebmin-web",
+  "name": "react-fluxthis-webpack-mocha-gulp",
   "version": "1.1.1",
-  "description": "A web based PostgreSQL admin interface",
-  "main": "''",
+  "description": "Bare bones project template featuing FluxThis, Webpack, Mocha, and React.",
+  "main": "index.js",
   "scripts": {
-    "build": "webpack --progress --profile --colors ",
-    "dev": "webpack-dev-server --content-base dist/ --progress --profile --colors --inline --hot --port 8081"
+    "test": "gulp test"
   },
   "repository": {
     "type": "git",
-    "url": "https://github.com/bsneade/pgwebmin.git"
+    "url": "https://github.com/mako-taco/react-fluxthis-webpack-mocha-gulp.git"
   },
   "keywords": [
-    "React",
-    "Webpack",
-    "Babel",
-    "Fluxxor",
-    "Webpack",
-    "Gulp",
-    "PostgreSQL"
+    "react",
+    "fluxxor",
+    "flux",
+    "webpack",
+    "gulp",
+    "mocha"
   ],
-  "author": "Brad Sneade",
-  "license": "PostgreSQL",
+  "author": "Jake Scott",
+  "license": "ALv2.0",
   "bugs": {
-    "url": "https://github.com/bsneade/pgwebmin/issues"
+    "url": "https://github.com/mako-taco/react-fluxthis-webpack-mocha-gulp/issues"
   },
-  "homepage": "https://github.com/bsneade/pgwebmin",
+  "homepage": "https://github.com/mako-taco/react-fluxthis-webpack-mocha-gulp",
   "devDependencies": {
+    "babel-loader": "^5.0.0",
+    "console-polyfill": "^0.2.1",
+    "css-loader": "^0.9.1",
+    "express": "^4.12.3",
     "gulp": "^3.8.11",
-    "watch": "^0.14.0",
-    "babel-core": "^6.4.5",
-    "json-loader": "^0.5.3",
-    "babel-loader": "^6.2.1",
-    "babel-preset-es2015": "^6.3.13",
-    "babel-preset-react": "^6.3.13",
-    "css-loader": "^0.18.0",
-    "extract-text-webpack-plugin": "^1.0.1",
-    "file-loader": "^0.8.5",
-    "less": "^2.5.3",
-    "less-loader": "^2.2.2",
-    "react-hot-loader": "^1.3.0",
-    "style-loader": "^0.13.0",
-    "url-loader": "^0.5.7",
-    "webpack": "^1.12.12",
-    "webpack-dev-server": "^1.14.1"
+    "mocha-phantomjs": "^3.5.3",
+    "phantomjs": "1.9.1 - 1.9.7-15",
+    "phantomjs-polyfill": "0.0.1",
+    "should": "^5.2.0",
+    "source-map-support": "^0.2.10",
+    "style-loader": "^0.9.0",
+    "watch": "^0.14.0"
   },
   "dependencies": {
+    "babel-core": "^5.0.8",
+    "fluxxor": "^1.7.3",
+    "gulp-util": "^3.0.4",
+    "jsx-loader": "^0.13.1",
+    "node-notifier": "^4.1.2",
+    "react": "^0.13.1",
     "webpack": "^1.7.3",
-    "fluxxor": "^1.7.3",
-    "babel-core": "^6.4.5",
-    "bootstrap": "^3.3.6",
-    "fluxxor": "^1.7.3",
-    "react": "^0.14.6",
-    "react-dom": "^0.14.6"
+    "when": "^3.7.2"
   }
 }
