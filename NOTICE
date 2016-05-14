@@ -1,2 +1,5 @@
-Contributions 
+This software contains code derived from mako-taco under the Apache-2 license.  
 https://github.com/mako-taco/react-fluxthis-webpack-mocha-gulp
+
+This software contains code derived from DinoJay under the MIT license.  
+https://github.com/DinoJay/react-fluxxor-webpack-babel
