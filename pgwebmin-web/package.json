@@ -1,14 +1,10 @@
 {
-  "name": "react-fluxthis-webpack-mocha-gulp",
+  "name": "pgwebmin-web",
   "version": "1.1.1",
-  "description": "Bare bones project template featuing FluxThis, Webpack, Mocha, and React.",
+  "description": "Frontend for the PGWebmin project",
   "main": "index.js",
   "scripts": {
     "test": "gulp test"
-  },
-  "repository": {
-    "type": "git",
-    "url": "https://github.com/mako-taco/react-fluxthis-webpack-mocha-gulp.git"
   },
   "keywords": [
     "react",
@@ -18,12 +14,7 @@
     "gulp",
     "mocha"
   ],
-  "author": "Jake Scott",
-  "license": "ALv2.0",
-  "bugs": {
-    "url": "https://github.com/mako-taco/react-fluxthis-webpack-mocha-gulp/issues"
-  },
-  "homepage": "https://github.com/mako-taco/react-fluxthis-webpack-mocha-gulp",
+  "license": "PostgreSQL",
   "devDependencies": {
     "babel-loader": "^5.0.0",
     "console-polyfill": "^0.2.1",
