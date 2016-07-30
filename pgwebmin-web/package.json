@@ -8,7 +8,7 @@
   },
   "keywords": [
     "react",
-    "fluxxor",
+    "redux",
     "flux",
     "webpack",
     "gulp",
@@ -16,27 +16,29 @@
   ],
   "license": "PostgreSQL",
   "devDependencies": {
-    "babel-loader": "^5.0.0",
+    "babel-loader": "^6.2.4",
     "console-polyfill": "^0.2.1",
-    "css-loader": "^0.9.1",
+    "css-loader": "^0.23.1",
     "express": "^4.12.3",
     "gulp": "^3.8.11",
-    "mocha-phantomjs": "^3.5.3",
-    "phantomjs": "1.9.1 - 1.9.7-15",
-    "phantomjs-polyfill": "0.0.1",
-    "should": "^5.2.0",
-    "source-map-support": "^0.2.10",
-    "style-loader": "^0.9.0",
-    "watch": "^0.14.0"
+    "mocha-phantomjs": "^4.1.0",
+    "phantomjs-prebuilt": "2.1.7",
+    "phantomjs-polyfill": "0.0.2",
+    "redux-devtools": "^3.3.1",
+    "should": "^10.0.0",
+    "source-map-support": "^0.4.2",
+    "style-loader": "^0.13.1",
+    "watch": "^0.19.1"
   },
   "dependencies": {
-    "babel-core": "^5.0.8",
-    "fluxxor": "^1.7.3",
+    "babel-core": "^6.11.4",
     "gulp-util": "^3.0.4",
     "jsx-loader": "^0.13.1",
-    "node-notifier": "^4.1.2",
-    "react": "^0.13.1",
-    "webpack": "^1.7.3",
+    "node-notifier": "^4.6.0",
+    "react": "^15.3.0",
+    "react-redux": "^4.4.5",
+    "redux": "^3.5.2",
+    "webpack": "^1.13.1",
     "when": "^3.7.2"
   }
 }

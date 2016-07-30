@@ -1,21 +1,13 @@
 'use strict';
 
-import Fluxxor from "fluxxor";
+
+import { createStore } from 'redux'
 const ACTION_TYPES = require('constants/ActionTypes');
 
-var ConnectionStore = Fluxxor.createStore({
-  initialize: function() {
-    this.loading = false;
-    this.error = null;
-    this.words = {};
-
-    this.bindActions(
-      ACTION_TYPES.GET_CONNECTIONS, this.onGetConnections
-    );
-  },
-
-  onGetConnections: function() {
-    return [
+/**
+ * Manage the connection
+ */
+function connection(state = [
     {
       user: 'brad',
       password: 'password1$',
@@ -23,8 +15,20 @@ var ConnectionStore = Fluxxor.createStore({
       host: 'localhost',
       port: 5432
     }
-    ];
+    ], action) {
+  switch (action.type) {
+  case ACTION_TYPES.GET_CONNECTIONS:
+    return state
+  default:
+    return state
   }
-});
+}
 
-export default ConnectionStore;
+// Create a Redux store holding the state of your app.
+// Its API is { subscribe, dispatch, getState }.
+let store = createStore(connection)
+
+// Log events on this store
+store.subscribe(() =>
+  console.log(store.getState())
+)
