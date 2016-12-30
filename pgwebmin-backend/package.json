@@ -18,14 +18,14 @@
   },
   "homepage": "https://github.com/bsneade/pgwebmin",
   "devDependencies": {
-    "gulp": "^3.9.0",
-    "gulp-jshint": "^1.11.2",
-    "gulp-nodemon": "^2.0.3"
+    "gulp": "^3.9.1",
+    "gulp-jshint": "^2.0.4",
+    "gulp-nodemon": "^2.2.1"
   },
   "dependencies": {
-    "pg": "^4.5.5",
-    "restify": "^4.0.4",
-    "winston": "^2.2.0",
+    "pg": "^6.1.2",
+    "restify": "^4.3.0",
+    "winston": "^2.3.0",
     "q": "^1.4.1",
     "pgwebmin-web": "file:../pgwebmin-web"
   }
