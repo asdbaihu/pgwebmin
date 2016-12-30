@@ -1,18 +1,22 @@
 {
-  "name": "pgwebmin-electron",
-  "version": "0.1.0",
-  "description": "Desktop packaging for PGWebmin",
+  "name": "electron-quick-start",
+  "version": "1.0.0",
+  "description": "A minimal Electron application",
   "main": "main.js",
   "scripts": {
-    "start": "electron main.js"
+    "start": "electron ."
   },
+  "repository": "https://github.com/electron/electron-quick-start",
   "keywords": [
     "Electron",
-    "Postgressql"
+    "quick",
+    "start",
+    "tutorial",
+    "demo"
   ],
-  "author": "Brad Sneade",
-  "license": "PostgreSQL",
+  "author": "GitHub",
+  "license": "CC0-1.0",
   "devDependencies": {
-    "electron-prebuilt": "^1.0.1"
+    "electron": "^1.4.1"
   }
 }
