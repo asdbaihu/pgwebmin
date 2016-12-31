@@ -1,14 +1,18 @@
 import React from 'react'
-import Footer from './Footer'
-import AddTodo from '../containers/AddTodo'
-import VisibleTodoList from '../containers/VisibleTodoList'
+import GroupBar from './GroupBar'
+import ServerBar from './ServerBar'
+import WorkPane from './WorkPane'
+// import VisibleTodoList from '../containers/VisibleTodoList'
+import { Grid, Row } from 'react-bootstrap'
 
 const App = () => (
-  <div>
-    <AddTodo />
-    <VisibleTodoList />
-    <Footer />
-  </div>
+  <Grid fluid={true}>
+    <Row>
+      <GroupBar />
+      <ServerBar />
+      <WorkPane />
+    </Row>
+  </Grid>
 )
 
 export default App

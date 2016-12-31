@@ -1,12 +1,12 @@
 {
-  "name": "electron-quick-start",
+  "name": "pgwebmin-electron",
   "version": "1.0.0",
-  "description": "A minimal Electron application",
+  "description": "Electron wrapper for the PGWebmin application",
   "main": "main.js",
   "scripts": {
     "start": "electron ."
   },
-  "repository": "https://github.com/electron/electron-quick-start",
+  "repository": "",
   "keywords": [
     "Electron",
     "quick",
@@ -14,8 +14,12 @@
     "tutorial",
     "demo"
   ],
-  "author": "GitHub",
-  "license": "CC0-1.0",
+  "author": "Brad Sneade",
+  "license": "PostgresQL",
+  "dependencies": {
+    "pgwebmin-web": "file:../pgwebmin-web",
+    "pgwebmin-backend": "file:../pgwebmin-backend"
+  },
   "devDependencies": {
     "electron": "^1.4.1"
   }

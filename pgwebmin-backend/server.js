@@ -42,6 +42,6 @@ fs.readdirSync('./routes').forEach(function(curFile) {
 });
 
 logger.info('Attempting to start server');
-server.listen(8080, function() {
-  logger.info('%s is running at %s', 8080, restify.url);
+server.listen(3001, function() {
+  logger.info('%s is running at %s', 3001, server.url);
 });
