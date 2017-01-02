@@ -1,14 +1,13 @@
 import React from 'react'
-import GroupBar from './GroupBar'
 import ServerBar from './ServerBar'
 import WorkPane from './WorkPane'
-// import VisibleTodoList from '../containers/VisibleTodoList'
+import GroupList from '../containers/GroupList'
 import { Grid, Row } from 'react-bootstrap'
 
 const App = () => (
   <Grid fluid={true}>
     <Row>
-      <GroupBar />
+      <GroupList />
       <ServerBar />
       <WorkPane />
     </Row>
